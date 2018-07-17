@@ -1,8 +1,6 @@
-
-
 require(uuid)
 
-source('/usr/local/lib/R/site-library/plumber/blockchaincore/blockchain.R')
+source('blockchain.R')
 
 # Generate a globally unique address for this node
 node_identifier = gsub('-','',UUIDgenerate())

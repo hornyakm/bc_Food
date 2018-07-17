@@ -1,5 +1,3 @@
-
-
 require(plumber)
 require(jsonlite)
 
@@ -23,5 +21,5 @@ custom_json <- function(){
 
 addSerializer("custom_json",custom_json)
 # Make sure you put the path to your blockchain-node-server.R script
-r <- plumb("/usr/local/lib/R/site-library/plumber/blockchaincore/blockchain-node-server.R")
+r <- plumb("blockchain-node-server.R")
 r$run(port=8000)
